@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="SonicPulse Product Landing Page" />
+    <meta
+      property="og:description"
+      content="Discover the So Good SonicPulse SP 100 headphones with premium sound quality."
+    />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    />
+    <meta name="twitter:title" content="SonicPulse Product Landing Page" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <a href="#" class="scroll-top" role="button" aria-label="Scroll to top"
+      >↑</a
+    >
+    <header id="header">
+      <div class="container navbar-container">
+        <a href="/" class="logo">
+          <img
+            alt="SonicPulse logo"
+            id="header-img"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=200"
+          />
+        </a>
+        <input
+          type="checkbox"
+          id="checkbox"
+          aria-label="Toggle navigation menu"
+        />
+        <nav id="nav-bar" class="navbar">
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li>
+              <a class="nav-link" href="#specifications">Specifications</a>
+            </li>
+            <li><a class="nav-link" href="#review">Review</a></li>
+            <li>
+              <a class="nav-link" href="#similar-products">Similar Products</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="container">
+        <div class="home_txt">
+          <h2>SonicPulse <span>SP 100 - So Good</span></h2>
+          <p>
+            Experience the ultimate in audio with the SonicPulse SP 100. So
+            good, it's lightweight, foldable, and delivers crystal-clear sound
+            with powerful bass and noise reduction.
+          </p>
+          <form id="form" action="https://www.example.com/email-submit">
+            <label for="email" class="sr-only">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+              type="email"
+            />
+            <input
+              class="button"
+              id="submit"
+              type="submit"
+              value="Get Started"
+            />
+          </form>
+        </div>
+        <figure>
+          <img
+            alt="SonicPulse SP 100 headphones on a sleek background"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+          />
+        </figure>
+      </section>
+      <section id="specifications" class="container">
+        <h2>Specifications</h2>
+        <div class="table">
+          <p>Impedance <span class="right">26 Ω</span></p>
+          <p>
+            Frequency Response <span class="right">18–18,000 Hz (-10 dB)</span>
+          </p>
+          <p>
+            Sound Pressure Level
+            <span class="right">110 dB SPL @ 1 kHz, 1V RMS</span>
+          </p>
+          <p>
+            Total Harmonic Distortion
+            <span class="right">< 0.5 % (1 kHz, 100 dB SPL)</span>
+          </p>
+          <p>Ear Coupling <span class="right">On-Ear</span></p>
+          <p>Adapter <span class="right">3.5mm angled plug</span></p>
+          <p>Cable Length <span class="right">1.4m</span></p>
+          <p>
+            Transducer Principle <span class="right">Dynamic, closed-back</span>
+          </p>
+          <p>Weight <span class="right">113g</span></p>
+          <p>Acoustic Principle <span class="right">Closed</span></p>
+        </div>
+      </section>
+      <section id="review" class="container">
+        <h2>Review</h2>
+        <div id="iframeContainer">
+          <iframe
+            allowfullscreen
+            frameborder="0"
+            height="315"
+            id="video"
+            src="https://www.youtube-nocookie.com/embed/kiSvMSN6azE?rel=0&controls=0&showinfo=0"
+            title="SonicPulse SP 100 Review Video"
+          ></iframe>
+        </div>
+      </section>
+      <section id="similar-products" class="container">
+        <h2>Similar Products</h2>
+        <div id="similar-products-container">
+          <div class="product" id="sp250">
+            <div class="level">SP 250 - So Good</div>
+            <figure>
+              <img
+                alt="SonicPulse SP 250 headphones with a modern design"
+                src="https://images.unsplash.com/photo-1613040809024-b4ef7ba99bc3?w=300"
+              />
+            </figure>
+            <p class="dollar"><strike>$69.95</strike></p>
+            <p class="dollar">$44.95</p>
+            <button class="button">View</button>
+          </div>
+          <div class="product" id="sp300">
+            <div class="level">SP 300 - So Good</div>
+            <figure>
+              <img
+                alt="SonicPulse SP 300 headphones in a studio setting"
+                src="https://images.unsplash.com/photo-1576864032037-f5e3518755e1?w=300"
+              />
+            </figure>
+            <p class="dollar">$49.95</p>
+            <button class="button">View</button>
+          </div>
+          <div class="product" id="sp400">
+            <div class="level">SP 400 - So Good</div>
+            <figure>
+              <img
+                alt="SonicPulse SP 400 headphones with a minimalist look"
+                src="https://images.unsplash.com/photo-1590658006821-01f0d7e5f6c6?w=300"
+              />
+            </figure>
+            <p class="dollar">$69.95</p>
+            <button class="button">View</button>
+          </div>
+        </div>
+      </section>
+      <footer class="container">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>© SonicPulse 2025</span>
+      </footer>
+    </main>
+  </body>
+</html>
