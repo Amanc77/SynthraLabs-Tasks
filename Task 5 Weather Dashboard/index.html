@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./icons/relicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <i class="bx bx-left-arrow-alt"></i>
+        <img
+          src="./icons/relicon.png"
+          class="header-icon"
+          alt="Weather App Icon"
+        />
+        Weather App
+        <div class="header-controls">
+          <button id="themeToggle" class="theme-toggle" title="Toggle Theme">
+            <i class="bx bx-moon td"></i>
+          </button>
+          <button id="unitToggle" class="unit-toggle">°C</button>
+        </div>
+      </header>
+
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <div class="input-group">
+            <input
+              type="text"
+              spellcheck="false"
+              placeholder="Enter city name"
+              required
+            />
+            <button class="search-btn" title="Search">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+          <div class="separator"></div>
+          <button class="location-btn">Get Device Location</button>
+          <div class="favorites">
+            <h4>Favorite Locations</h4>
+            <div class="favorites-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="weather-part">
+        <img src="" alt="Weather Icon" />
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span><span class="unit">C</span>
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class="bx bx-map"></i>
+          <span>_, _</span>
+        </div>
+        <div class="hourly-forecast">
+          <h4>Hourly Forecast</h4>
+          <div class="hourly-container"></div>
+        </div>
+        <div class="bottom-details">
+          <div class="row">
+            <div class="column feels">
+              <i class="bx bxs-thermometer"></i>
+              <div class="details">
+                <div class="temp">
+                  <span class="numb-2">_</span>
+                  <span class="deg">°</span><span class="unit">C</span>
+                </div>
+                <p>Feels like</p>
+              </div>
+            </div>
+            <div class="column humidity">
+              <i class="bx bxs-droplet-half"></i>
+              <div class="details">
+                <span>_</span>
+                <p>Humidity</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column wind">
+              <i class="bx bx-wind"></i>
+              <div class="details">
+                <span>_</span>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+            <div class="column uv">
+              <i class="bx bx-sun"></i>
+              <div class="details">
+                <span>_</span>
+                <p>UV Index</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column vis">
+              <i class="bx bx-show-alt"></i>
+              <div class="details">
+                <span>_</span>
+                <p>Visibility</p>
+              </div>
+            </div>
+            <div class="column pressure_mb">
+              <i class="bx bx-water"></i>
+              <div class="details">
+                <span>_</span><span class="pressure-unit">mb</span>
+                <p>Pressure</p>
+              </div>
+            </div>
+          </div>
+          <button id="openModal" class="btn">Show 7-day forecast</button>
+          <button id="saveFavorite" class="btn favorite-btn">
+            Save to Favorites
+          </button>
+        </div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <h3>7-Day Forecast</h3>
+          <div class="forecast"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
