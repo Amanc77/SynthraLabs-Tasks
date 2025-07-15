@@ -1,4 +1,4 @@
-# SynthraLabs Internship Tasks 💻
+# SynthraLabs Internship Tasks
 
 This repository contains the completed tasks for the SynthraLabs Web Development Internship. Each task demonstrates a specific aspect of front-end development using HTML, CSS, and JavaScript.
 
@@ -64,8 +64,6 @@ A weather dashboard that fetches and displays real-time weather data based on th
 - Shows temperature, weather condition, humidity, etc.  
 - Responsive and clean UI  
 - Error handling for invalid city names  
-
-📂 Folder: `Task 5 Weather Dashboard`
 
 ---
 
